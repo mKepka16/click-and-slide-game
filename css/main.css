@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background: rgb(70, 67, 67);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider {
+    margin: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider .images {
+    display: flex;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.arrow {
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+arrow-right {
+    left: 125px;
+}
+
+.arrow:hover {
+    color: rgb(189, 178, 178);
+}
+
+.slider img {
+    width: 100px;
+    height: 100px;
+}
+
+.buttons button {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #357BFA;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px 20px 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    border-width: 2px;
+    padding: 9px 19px;
+}
+
+.board {
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+}
+
+.timer {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.mins, .sec, .msec, .hours {
+    display: flex;
+}
+
+.scoreboard {
+    font-family: Orbitron, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: .09em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.scoreboard h3 {
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.scoreboard ol {
+    display: inline-block;
+}
+
+.scoreboard li {
+    padding: 10px 0;
+}
+
+.scoreboard b {
+    color: #357BFA;
+}
+
+.scoreboard p {
+    display: inline;
+}
+
+.scoreboard-button {
+    font-family: Orbitron, Helvetica, sans-serif;
+    font-family: Orbitron, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: .09em;
+    position: absolute;
+    padding: 20px;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.scoreboard-button:hover {
+    background: rgb(48, 46, 46);
+}
