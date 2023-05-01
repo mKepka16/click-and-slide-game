@@ -22,12 +22,12 @@ const slider = {
 
     let counter = 1;
     const handleInterval = setInterval(() => {
-      if (counter > 100) {
+      if (counter > 10) {
         clearInterval(handleInterval);
         this.sliderDOM.scrollTo((image.imgNow - 1) * 100, 0);
         this.isSliding = false;
       }
-      this.sliderDOM.scrollBy(-1, 0);
+      //   this.sliderDOM.scrollBy(-1, 0);
       counter++;
     }, 2);
 
@@ -46,12 +46,12 @@ const slider = {
 
     let counter = 1;
     const handleInterval = setInterval(() => {
-      if (counter > 100) {
+      if (counter > 10) {
         clearInterval(handleInterval);
         this.sliderDOM.scrollTo((image.imgNow - 1) * 100, 0);
         this.isSliding = false;
       }
-      this.sliderDOM.scrollBy(1, 0);
+      //   this.sliderDOM.scrollBy(1, 0);
       counter++;
     }, 2);
 
